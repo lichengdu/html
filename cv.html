@@ -1,84 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" src="index.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
 <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
-<style type="text/css">
-.menu{ width:100%; padding:0px; margin:0px 0 50px 0;margin-top:-2.1%;}
-.menu ul{ list-style:none; padding:0px; margin:0px; width:100%;}
-.menu ul li{ list-style:none; margin:3% 0 0 3%; padding:5.5% 0;padding-bottom:0px; width:29.333333%;height:auto; float:left; display:block; text-align:center;}
-.menu ul li a{ color:#FFFFFF; text-decoration:none;  text-align: center;} 
-.menu ul li a span{ display:block; text-align:center; font-size:14px; line-height:25px;}
-.menu ul li img{ display:inline-block;max-width:60%;}
-.green{ background-color:#85af5d;}
-.blue{ background-color:#29aae3;}
-.darkblue{ background-color:#035792;}
-.red{ background-color:#c53238;}
-.purple{ background-color:#8b2767;}
-.pink{ background-color:#f87c68;}
-.orange{ background-color:#f17225;}
-.black{ background-color:#272625;}
-.gray{ background-color:#6e6e6e;}
-.yellow{ background-color:#ffb606;}
-.bluegreen{ background-color:#06a78b;}
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
-.clearfix { display: inline-block; } 
-.clearfix { display: block; } 
-.none { display: none; } 
-span{color:#ffffff;}
 
-
-.ui-block-a {
-  text-align: center;
-}
-.ui-block-b {
- text-align: right;
-
-}
 
 </style>
 </head>
 <body>
 
-<div data-role="page" id="pageone">
-  <div data-role="header" data-position="fixed" data-theme="b">
-   
-    
-      <div >
-       
-        <div class="ui-grid-b">
-         <div class="ui-block-a">
-      <a href="#" data-role="button" data-rel="back">返回</a>
-      </div>
-      <div class="ui-block-b">
+  <div data-role="page" id="pageone">
+    <div data-role="header" data-position="fixed"  data-theme="b">
 
-         个人简历
+
+
+      <div  >
+
+        <center><a href="lichengdu-cv.doc" data-role="button" >个人简历(点击下载)</a></center>
       </div>
-      <div class="ui-block-c">
-       
-        
-      </div>
+
       
-     
+
+
     </div>
-    
-  </div>
-  <div>
-    
-  </div>
+    <div>
+      <!-- 正文 -->
+      <h1>李成都</h1>
 
- 
+      工作经验：5年<br/>   毕业院校：内江师范学院  信息计算科学 本科<br/>
+      语言技能：CET4、数据库四级工程师、JAVA、Android<br/>
+      Tel: 18578608856　 E-mail: lichengdu0660@163.com<br/>
+    </div>
+    <!-- 可折叠块 -->
+    <div data-role="collapsible"  data-theme="b" data-collapsed="false">
+      <h2>求职意向</h2>
+      高级Java开发工程师
+    </div>
+    <div data-role="collapsible"  data-theme="b" data-collapsed="true">
+      <h2>工作/项目经历</h2>
+     <div>
+        <h3>2017/05 - 至今   荣邦科技有限公司</h3>
+        <h3>参与项目: 专线物流平台、润泓物流平台、联银物流平台</h3>
+        <h3>项目架构: wechat+SpringMVC+mybatis+postgresql+dubbox+netty+redis+Tomcat+activeMQ+AngularJS </h3>
+        <h3>项目简介:</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;公司物流平台主要是为物流企业提供更方便快捷的物流开单、物流结算、个性清分、物流跟踪。主要功能模块有发货人注册、我要发货、网上接单、中转开单、原返开单、货物跟踪、货物装车、司机分配、到货确认、卸货、送货、签收、公司管理、员工管理、物流站点管理、司机车辆管理、报表管理、微信公众号开发同步PC功能。
+        <h3>责任描述:</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;主要负责专线物流结算中心设计，结算中心表设计、记账方式设计、功能开发等。结算对象包括物流公司与发货人、收货人、提货人、物流供应商之间的结算。记账在业务开单是生成各个对象之间的记账，当货物运费现付是物流公司和发货人之间记运费，存在代收货款时物流公司和发货人记货款、物流公司和收货人记代收货款。当到付或代收货款时记物流公司和收货人之间的运费或货款，中转时记录上一物流公司和下一物流公司记账中转费。生成结算单用户支付是生成对应勾选的结算单进行支付，支付调用公司和银联的统一支付平台或者微信支付宝支付，支付成功后平台回调修改结算单状态运单的运费货款状态。
+     
 
-  
+
+      <br/><br/><br/>
+      
+        <h3>
+          2016/08 - 2017/01    深圳联友科技有限公司
+        </h3>
+        <h3>
+          参与项目: 启辰智慧车管家APP后台改造</h3>
+          <h3>
+           项目架构: Android+IOS+SpringMVC+mybatis+MySql+nginx+redis+Webservice+Tomcat
+          </h3>
+          <h3>项目简介:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;该项目在15年的时候就已经开发，但是随着业务的变换和性能要求的提高原来.net的后台架构公司准备废弃改用java后台包括的功能模块有行程分析、驾驶评分、车辆状态、车辆位置、违章查询等主要功能用和可以通过蓝牙或者wifi连接监控车辆的状态。
+          <h3>责任描述:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;在原来.net接口文档的基础上重新定义接口，主要涉及的功能有用户模、行程分析、车辆状态、违章查询、数据同步模块的接口重写和联调测试。
+        
+
+
+      
+      <br/><br/><br/>
+      ]
+        <h3>
+          2015/11 - 2016/08    深圳联友科技有限公司
+        </h3>
+        <h3>
+          参与项目:东风日产重量管理系统
+          </h3>
+          <h3>
+           项目架构: .net+Jquery+easyUI + Oracle
+          </h3>
+          <h3>项目简介:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;该项目为东风日产设计科室对每个零件每个阶段的集约统计。主要涉及到零件科室Function的分配、科室车担分配、零件担当分配、项目信息等基础数据维护。维护好基础数据由“车辆计划科”发起整车零件重量集约流程。流程每个零件会根据车担和担当进行零件待办分配。零件设计担当可在零件列表中直接录入重量和零件坐标信息（均由easyUI DataGrid实现）。根据零件集约和发布流程统计不同维度零件重量信息报表。
+          <h3>责任描述:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;主要负责动态零件分配和单据力度控制到每个零件待办的流程设计，实现“重量集约流程”、“重量变更流程”。通过easyUI实现设计担当对零件类似于excle的单元编辑和保存，并通过ajax校验不同版本的重量差异提醒录入人员，校验输入规范性，分配项目组成员工作任务。
+        
+
+      
+
+      <br/><br/><br/>
+      
+        <h3>
+          2015/04 - 2015/10    深圳联友科技有限公司
+        </h3>
+        <h3>
+          参与项目: 启辰智慧车管家APP
+          </h3>
+          <h3>
+           项目架构: Android+IOS+.net+MySql+Webservice+Tomcat
+          </h3>
+          <h3>项目简介:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;该APP分为Android和IOS版本，主要是为启辰R50和T70两款车型提供车辆状态监控，导航，顺风车定位车主乘客位置，违章查询，售后服务，活动推送，用车油耗习惯统计等服务。
+          <h3>责任描述:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;主要负责后台数据库表设计、存储过程、定时job的编写、数据参数的定义，数据库和.net后台的对接。开发系统管理员后台功能包括，后台用户行为统计，百公里油耗统计，消息管理，富文本活动推送等管理功能。数据集成通过Webserivce接口获取东风日产其他系同步统数据，通过调用百度云推送实现消息的“单播”、“组播”、“广播”，油耗分享到朋友圈等第三方api调用集成到App中。
+        
+     
+
+        <br/><br/><br/>
+     
+        <h3>
+          2013/04 - 2015/04     东软集团
+        </h3>
+        <h3>
+          参与项目:南方电网“人力资源管理系统”
+          </h3>
+          <h3>
+           项目架构: Spring+ Hibernate + Oracle+ Weblogic+XML+Webservice
+          </h3>
+          <h3>项目简介:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;项目利用东软的HCM（东软慧鼎）成熟的“人力资源系统”进行定制开发从而为南方电网提供更优质的人才服务。主要涉及的功能有组织架构维护，人才信息维护，人才招聘，人才录用，员工管理，员工培训与评价，员工自助等功能模块。
+          <h3>责任描述:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;主要负责南方电网“人力资源管理系统”与其他六大系统的数据集成和界面，主要的集成对象有:“南方电网营销管理系统”、“南方电网生产管理系统”、“南方电网培训管理系统”，“南方电网物资管理系统”。集成类型主要包括：“数据资源集成”，“界面集成”。主要实现技术：“Webservice”，“JMS”等跨平台集成技术。主要业务模块：“组织机构、岗位管理、用工管理”、“培训教育”、“员工评价”、“员工自助”、“生产经营报表”、“年度财务报表”等主要模块,管理接口组成员和小组成员任务分配。
+       </div>
+      </div>
+
+
+<div data-role="collapsible" data-theme="b" data-collapsed="true">
+      <h2>个人技能</h2>
+<div>
+        
+        熟悉Spring、mybatis、SpringMVC、netty、dubbo、dubbox等高性能RPC、了解redis、nginx等技术；<br>
+熟悉JS、HTML、CSS、XML、JSON，熟悉JQuery、EasyUI等框架；<br>
+熟悉MySQL、postgresql、Oracle等数据库，能熟练进行命令行操作；<br>
+能熟练撰写SQL语句及存储过程；<br>
+能熟练使用git、svn等项目管理工具；<br>
+对Linux有一定了解，能进行常见的命令操作；<br>
+      </div>
 </div>
 
-</body>
-</html>
+<div data-role="collapsible" data-theme="b" data-collapsed="true">
+      <h2>自我评价</h2>
+      <div>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;经过四年多的工作，自己在工作中不断成长，不断学习。自己在对Java、netty、dubbox、redis、nginx等主流技术都有很深入的理解，对Spring Cloud也有一定的了解。对现流行的前端开发技术如html5、jquey-mobile、easyui等技术都有应用，同时熟悉在Android开发中对第三方分享、支付、地图等常用API的调用。
+      </div>
+</div>
+
+
+
+      <div data-role="footer" data-position="fixed"  data-fullscreen ="true" data-theme="b">
+        <div data-role="navbar" >
+          <ul>
+            <li><a href="index.html"  data-direction="reverse" data-icon="home">主页</a></li>
+            <li><a href="bloglist.html"  data-direction="reverse" data-icon="comment">我的博客</a></li>
+            <li><a href="cv.html"  data-direction="reverse" data-icon="calendar">个人履历</a></li>
+            <li><a href="about.html"  data-direction="reverse" data-icon="user">关于我们</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+  </html>
 
